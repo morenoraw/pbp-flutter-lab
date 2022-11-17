@@ -35,3 +35,25 @@ _"final"_ berarti tugas tunggal. Variabel atau bidang akhir harus memiliki pengi
 <br /> Untuk yang ini, saya membuat widget Text baru yang memakai TextStyle warna merah.
 - Angka 0 dianggap sebagai angka genap.
 <br /> Saya mengimplementasinya memakai modulo, sehingga angka 0 dianggap sebagai angka genap.
+
+## Tugas 8
+
+# Jelaskan perbedaan Navigator.push dan Navigator.pushReplacement.
+
+
+
+# Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+
+
+
+# Sebutkan jenis-jenis event yang ada pada Flutter (contoh: onPressed).
+
+
+
+# Jelaskan bagaimana cara kerja Navigator dalam "mengganti" halaman dari aplikasi Flutter.
+
+
+
+# Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+
+
