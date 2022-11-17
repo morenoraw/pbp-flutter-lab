@@ -40,20 +40,35 @@ _"final"_ berarti tugas tunggal. Variabel atau bidang akhir harus memiliki pengi
 
 # Jelaskan perbedaan Navigator.push dan Navigator.pushReplacement.
 
-
+Perbedaan yang dimiliki dua method tersebut adalah method `push()` pada widget navigator akan menambahkan route(page/screen) baru ke dalam stack route yang diatur oleh Navigator. Method `pushReplacment()` akan mengganti route lama (route yang berada pada top of the stack) dengan route baru.
 
 # Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
 
-
+- `Form`, sebagai container untuk mengelompokkan widget form field lainnya
+- `Expanded`, untuk membuat child widgetnya mengisi ruang pada mainaxis
+- `TextFormField`, untuk membuat Form Field yang berisikan TextField
+- `DropdownButtonFormField`, untuk membuat Form yang berisikan data dari List
+- `SizedBox`, Membuat kotak dengan ukuran tetap.
 
 # Sebutkan jenis-jenis event yang ada pada Flutter (contoh: onPressed).
 
-
+- onHover
+- onSaved
+- onFocusChange
+- onLongPress
+- onPressed
+- onTap
+- onClick
+- onChanged
 
 # Jelaskan bagaimana cara kerja Navigator dalam "mengganti" halaman dari aplikasi Flutter.
 
-
+Navigator cara kerjanya seperti struktur data Stack yang berarti berprinsip LIFO (Last In First Out). Halaman yang sedang ditampilkan akan berada di paling atas. Sesuai dengan Stack, Navigator akan melakukan operasi seperti `push` dan `pop`. Operasi `push` akan menambahkan rute baru kedalam stack sehingga halaman baru akan ditampilkan. Operasi `pop` akan menghilangkan route yang berada pada top of stack sehingga halaman yang sedang ditampilkan berubah menjadi halaman sebelumnya.
 
 # Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 
-
+1. Membuat drawer serta routing pada widget drawer
+2. Membuat model untuk budget
+3. Membuat halaman Tambah Budget
+4. Membuah halaman yang menampilkan Data Budget
+5. Me-*refactor* atau membuat widget Drawer menjadi berada di file terpisah 
