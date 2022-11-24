@@ -72,3 +72,29 @@ Navigator cara kerjanya seperti struktur data Stack yang berarti berprinsip LIFO
 3. Membuat halaman Tambah Budget
 4. Membuah halaman yang menampilkan Data Budget
 5. Me-*refactor* atau membuat widget Drawer menjadi berada di file terpisah 
+
+## Tugas 9
+
+# Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+
+Ya, kita dapat mengambil data JSON tanpa membuat model di flutter, tetapi lebih baik membuat model terlebih dahulu. Karena dengan model kita tahu persis jenis data apa yang ingin kita ambil dan tertata rapih.
+
+# Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+
+1. FutureBuilder(), sebuah widget untuk membantu program menjalankan fungsi secara asynchronous dan akan memperbarui UI berdasarkan snapshot terbaru dari interaksi dengan Future.
+2. ListView(), digunakan untuk membuat widget array linier yang dapat digulir.
+3. GestureDetector(), widget non-visual yang digunakan untuk mendeteksi gestur pengguna.
+
+
+# Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
+
+Data JSON diambil dengan membuat sebuah fungsi yang mengirim HTTP GET request ke Heroku. Respon dari heroku tersebut kemudian diproses dan digunakan untuk menginisialisasi model yang telah didefinisikan sebelumnya.
+
+# Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+
+1. Menambahkan tombol navigasi pada drawer/hamburger untuk ke halaman mywatchlist, saya menambahkan di widget drawer.dart
+2. Membuat satu file dart yang berisi model mywatchlist, saya membuatnya didalam folder models dengan nama modelwatchlist.dart
+3. Menambahkan halaman mywatchlist yang berisi semua watch list yang ada pada endpoint JSON di Django yang telah kamu deploy ke Heroku sebelumnya (Tugas 3). Pada bagian ini, kamu cukup menampilkan judul dari setiap mywatchlist yang ada, saya melakukannya di watchlist.dart
+4. Membuat navigasi dari setiap judul watch list ke halaman detail, saya menggunakan OnTap jadi ketika dipencet akan bisa merefer ke detail.
+5. Menambahkan halaman detail untuk setiap mywatchlist yang ada pada daftar tersebut. Halaman ini menampilkan judul, release date, rating, review, dan status (sudah ditonton/belum). Saya membuat page baru yaitu detailwatchlist.dart
+6. Menambahkan tombol untuk kembali ke daftar mywatchlist, saya menggunakan TextButton yang berada di SizedBox

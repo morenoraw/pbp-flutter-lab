@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:counter_7/counter7.dart';
+import 'package:counter_7/pages/counter7.dart';
 import 'package:provider/provider.dart';
 import 'package:provider/single_child_widget.dart';
 
